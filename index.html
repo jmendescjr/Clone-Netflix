@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css"><!--link do arquivo css para formatação de estilos-->
+    
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+    
+    <!--arquivos owlcss-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <title>Cienciaflix</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">CIÊNCIAFLIX</h2>
+            <nav><!--menu de navegação-->
+                <a href="#">Inicio</a><!--alt+shift+seta p baixo, copia a linha-->
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+               <h3 class="titulo">COSMOS</h3>
+               <p class="descricao">Uma aventura que se estende por bilhões de anos na evolução da vida e da consciência. Uma visita a um laboratório de 100 mil anos de idade. A história da mudança no estilo de vida que alterou radicalmente a existência humana e a vida do herege que encontrou Deus no livro da natureza, abrindo caminho para as estrelas.</p>
+                <div class="botoes">
+                    <button role="button" class="botao"><!--role > independente de onde reinderize, será sempre um botão(celular, tablet,pc...)-->
+                    <i class="fas fa-play"></i><!--copiado do fonteawesome-->
+                        ASSISTIR AGORA
+                    </button> 
+                    <button role="button" class="botao">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>  
+                </div>
+            </div> 
+        </div>
+    </main>
+
+    <div class="carrossel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filmes" src="img/perception.jpg" alt="add1">
+            </div>            
+            <div class="item">
+                <img class="box-filmes" src="img/cienciadetudo.jpg" alt="add1">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/cienciadoabsurdo.jpg" alt="add1">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/misteriosdaciencia.jpg" alt="add1">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/planeta_terra2.jpg" alt="add1">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/planetaterraII.jpg" alt="add1">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/raiox2.jpg" alt="add1">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/terrabrasil.jpg" alt="add1">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/truquesdamente.jpg" alt="add1">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/cosmos_poster.jpg" alt="add1">
+            </div> 
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/eb4af93997.js" crossorigin="anonymous"></script><!--link copiado do site fonteawesome - traz icones para add ao programa. Fica hospedado na nuvem-->
+    <script src="js/owl/jquery.min.js"></script> <!--sempre deixar javascript no final-->  
+    <script src="js/owl/owl.carousel.min.js"></script>  
+    <script src="js/owl/setup.js"></script> 
+</body>
+</html>

@@ -1,0 +1,112 @@
+:root {/*declarar variável. cores principais do site*/
+    --vermelho: #e50914;
+    --preta: #141414;
+    
+}
+
+*{/* reset*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*elementos base*/
+body{
+    background: var(--preta);
+    font-family: 'arial', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;/*coloca todos os elementos do cabeçalho em linha*/
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;/*distancia entre h2 e nav*/
+    
+}
+
+header .logo {
+    margin-left: 10px;
+    color: var(--vermelho);
+    font-family: 'arial black';
+    font-size: 30px;
+}
+
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+
+
+header nav a:hover {
+    color: dimgray;
+}
+
+/*filme principal*/
+
+.filme-principal {
+    font-size: 14px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/cosmos2.jpg');/* teve q usar ".." para subir um nivel e localizar a pasta img*/
+    height: 350px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;/*comaça da esquerda para direita*/
+}
+
+.filme-principal .descricao {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.titulo {
+    margin-top: 15%;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    
+    color: white;
+    padding: 15px 10px;
+    margin: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 1s ease all; /*Realiza uma animação nos botoes*/
+    
+}
+
+.botao:hover {
+    background-color: white; /*quando passar o mause, inverte as cores*/
+    color: black;
+
+    
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filmes{ /*altura e largura para as imagens do carrosel*/
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
+
+.carrossel-filmes {
+    margin-top: 5px;
+}
+
